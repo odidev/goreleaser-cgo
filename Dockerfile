@@ -1,4 +1,4 @@
-FROM dockercore/golang-cross:1.12.12
+FROM dockercore/golang-cross:1.12.10
 
 LABEL maintainer="cbroglie@gmail.com"
 
