@@ -13,4 +13,7 @@ RUN wget ${GORELEASER_DOWNLOAD_URL}; \
     tar -xzf $GORELEASER_DOWNLOAD_FILE -C /usr/bin/ goreleaser; \
     rm $GORELEASER_DOWNLOAD_FILE;
 
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends musl-tools
+
 CMD ["goreleaser", "-v"]
